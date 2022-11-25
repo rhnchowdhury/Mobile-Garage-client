@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+
 
 const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
+    const { login } = useContext(AuthContext);
+    const [loginError, setLoginError] = useState('');
+
     const handleLogin = (data, e) => {
         console.log(data);
         e.target.reset();
+        setLoginError('');
+        login(data.email, data.password)
+            .then(result => {
+                const user = result.user;
+                console.log(user)
+            })
+            .catch(err => {
+                console.log(err)
+                setLoginError(err.message);
+            })
     }
     return (
         <div className='flex justify-center items-center my-20'>
@@ -35,6 +50,7 @@ const Login = () => {
                         <label className="label"><span className="label-text">Forget password?</span></label>
                     </div>
                     <input className='btn btn-active w-full max-w-xs' value='Login' type="submit" />
+                    {loginError && <p className='text-error'>{loginError}</p>}
                     <p>New to mobile garage? <Link to='/signup' className='text-accent font-bold'>Create an account</Link></p>
                 </form>
                 <div className="divider">OR</div>
