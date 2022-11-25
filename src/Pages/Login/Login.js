@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
 
@@ -8,6 +8,9 @@ const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const { login } = useContext(AuthContext);
     const [loginError, setLoginError] = useState('');
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
 
     const handleLogin = (data, e) => {
         console.log(data);
@@ -17,12 +20,14 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user)
+                navigate(from, { replace: true })
             })
             .catch(err => {
                 console.log(err)
                 setLoginError(err.message);
-            })
-    }
+            });
+    };
+
     return (
         <div className='flex justify-center items-center my-20'>
             <div>
