@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Xiaomi 13 Lite",
+        "image": "https://media.suara.com/pictures/653x366/2021/12/29/86522-xiaomi-12.jpg",
+        "address": "Moghbazar",
+        "name": "Raihan",
+        "years": "1 years",
+        "post": "10 Sep, 2022",
+        "price": 180,
+        "selling": 130
+    },
+    {
+        "title": "Xiaomi Note 12",
+        "image": "https://img.unocero.com/2022/04/Redmin-Note-12-1024x674.jpeg",
+        "address": "Modhubagh",
+        "name": "Tanjim",
+        "years": "1.5 years",
+        "post": "10 Jul, 2022",
+        "price": 150,
+        "selling": 110
+    },
+    {
+        "title": "Xiaomi Note 12 Pro",
+        "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/REDMI_NOTE_12_PRO_PLUS_3.JPG",
+        "address": "Dhaka",
+        "name": "Talha",
+        "years": "1 years",
+        "post": "10 Jun, 2022",
+        "price": 130,
+        "selling": 100
+    },
+    {
+        "title": "Xiaomi Note 11 Pro",
+        "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Xiaomi_Redmi_Note_11_Serie_auf_Geekbench46.jpg",
+        "address": "Farmgate",
+        "name": "Tanvir",
+        "years": "2 years",
+        "post": "10 Apr, 2022",
+        "price": 120,
+        "selling": 90
+    },
+    {
+        "title": "Xiaomi Note 10 Pro",
+        "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Redmi_Note_10_Pro3685.jpg",
+        "address": "Dhaka",
+        "name": "Arham",
+        "years": "1 years",
+        "post": "10 Feb, 2022",
+        "price": 100,
+        "selling": 80
+    },
+    {
+        "title": "Xiaomi Note 10 Pro",
+        "image": "https://gngp.sgp1.digitaloceanspaces.com/files/Xiaomi/Redmi%20Note%209%20Pro/Redmi-Note-9-Pro-Interstellar-Grey-des-2.jpg",
+        "address": "Dhaka",
+        "name": "Arshan",
+        "years": "1 years",
+        "post": "10 Jan, 2022",
+        "price": 100,
+        "selling": 80
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "638213b3f03c4a09dfa378fe",
+        "title": "OnePlus Nord CE 2",
+        "image": "https://static.toiimg.com/photo/msid-89645270/89645270.jpg",
+        "address": "Moghbazar",
+        "name": "Raihan",
+        "years": "1 years",
+        "post": "10 Sep, 2022",
+        "price": 180,
+        "selling": 130
+    },
+    {
+        "id": "638213b35c468501128b7a6e",
+        "title": "OnePlus 9 Pro",
+        "image": "https://minirate.ch/wp-content/uploads/2021/04/oneplus-9-pro-green-1.jpg",
+        "address": "Modhubagh",
+        "name": "Tanjim",
+        "years": "1.5 years",
+        "post": "10 Jul, 2022",
+        "price": 150,
+        "selling": 110
+    },
+    {
+        "id": "638213b31321aae68e0c4fd0",
+        "title": "OnePlus 10 Pro",
+        "image": "https://alaneesqatar.qa/wp-content/uploads/2022/03/oneplus-10-pro-black-3.png",
+        "address": "Dhaka",
+        "name": "Talha",
+        "years": "1 years",
+        "post": "10 Jun, 2022",
+        "price": 130,
+        "selling": 100
+    },
+    {
+        "id": "638213b3fb6f6bcf6b1a0db8",
+        "title": "OnePlus 9RT",
+        "image": "https://images.firstpost.com/fpimages/1200x800/fixed/jpg/2021/03/OnePlus9-.jpg",
+        "address": "Farmgate",
+        "name": "Tanvir",
+        "years": "2 years",
+        "post": "10 Apr, 2022",
+        "price": 120,
+        "selling": 90
+    },
+    {
+        "id": "638213b3f2cdf39e1e619e0f",
+        "title": "OnePlus Nord 2T",
+        "image": "https://m.media-amazon.com/images/I/51YgjWO013L._SL1500_.jpg",
+        "address": "Dhaka",
+        "name": "Arham",
+        "years": "1 years",
+        "post": "10 Feb, 2022",
+        "price": 100,
+        "selling": 80
+    },
+    {
+        "id": "638213b3b9a087aea626c7fc",
+        "title": "OnePlus 8 Pro",
+        "image": "https://cdn.shopify.com/s/files/1/1706/9177/products/gg2_a683d371-8604-4697-aa6f-7b9179f2f8a4.jpg?v=1613634903",
+        "address": "Dhaka",
+        "name": "Arshan",
+        "years": "1 years",
+        "post": "10 Jan, 2022",
+        "price": 100,
+        "selling": 80
+    }
+]

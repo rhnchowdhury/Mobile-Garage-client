@@ -6,6 +6,7 @@ import Dash from '../../Pages/Dash';
 import Home from '../../Pages/Homes/Home';
 import Login from '../../Pages/Login/Login';
 import SignUp from '../../Pages/Login/SignUp';
+import IphoneAll from '../../Products/iPhones/Alliphones/IphoneAll';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 
 export const router = createBrowserRouter([
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUp></SignUp>
+            },
+            {
+                path: '/iphone',
+                element: <IphoneAll></IphoneAll>
             }
         ]
     },

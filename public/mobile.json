@@ -1,0 +1,57 @@
+[
+    {
+        "id": "63820be637654c4f83e98143",
+        "title": "iPhone 14 Pro Max",
+        "image": "https://static.digit.in/default/25fcc9986f48c35d9342614a6056e3377814a48d.jpeg?tr=w-1200",
+        "address": "Moghbazar",
+        "name": "Raihan",
+        "years": "1 years",
+        "post": "10 Sep, 2022",
+        "price": 180,
+        "selling": 130
+    },
+    {
+        "id": "63820be6d04cf1bc26c778f1",
+        "title": "iPhone 13 Pro Max",
+        "image": "https://c8.alamy.com/zooms/9/1f53963cc4e248fb9bca1b81d064b262/2h2j7wg.jpg",
+        "address": "Modhubagh",
+        "name": "Tanjim",
+        "years": "1.5 years",
+        "post": "10 Jul, 2022",
+        "price": 150,
+        "selling": 110
+    },
+    {
+        "id": "63820be697054d43a3837663",
+        "title": "iPhone 12 Pro Max",
+        "image": "https://i.pinimg.com/736x/10/b5/fc/10b5fca9ef6460c9156ffe5a74dc7055.jpg",
+        "address": "Dhaka",
+        "name": "Talha",
+        "years": "1 years",
+        "post": "10 Jun, 2022",
+        "price": 130,
+        "selling": 100
+    },
+    {
+        "id": "63820be60adaf78ed4565997",
+        "title": "iPhone 12",
+        "image": "https://www.gizbot.com/images/2020-04/apple-iphone-12-concept_158711095630.jpg",
+        "address": "Farmgate",
+        "name": "Tanvir",
+        "years": "2 years",
+        "post": "10 Apr, 2022",
+        "price": 120,
+        "selling": 90
+    },
+    {
+        "id": "63820be6041106fcb9facba0",
+        "title": "iPhone 8 Plus",
+        "image": "https://media.istockphoto.com/id/955980644/photo/iphone-8-plus-space-gray-rear-view.jpg?s=170667a&w=0&k=20&c=uDgTtNDnYapu4T7h-GvlMW-FjoKodEgl_2HJE-78GR8=",
+        "address": "Dhaka",
+        "name": "Arham",
+        "years": "1 years",
+        "post": "10 Feb, 2022",
+        "price": 100,
+        "selling": 80
+    }
+]
