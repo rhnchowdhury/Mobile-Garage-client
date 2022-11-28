@@ -6,7 +6,7 @@ import IphoneShow from './IphoneShow';
 const Iphone = () => {
     const { data: iphones = [] } = useQuery({
         queryKey: [],
-        queryFn: () => fetch('http://localhost:5000/iphone')
+        queryFn: () => fetch('http://localhost:5000/phone')
             .then(res => res.json())
     });
     return (
@@ -15,6 +15,7 @@ const Iphone = () => {
             <div className='grid grid-cols-1 lg:grid-cols-2'>
                 {
                     iphones.map(iphone => <IphoneShow key={iphone._id} iphone={iphone}></IphoneShow>)
+                    // iphones.slice(0, 1)
                 }
                 <div className='card-actions justify-center ml-44'>
                     <Link to='/iphone'>

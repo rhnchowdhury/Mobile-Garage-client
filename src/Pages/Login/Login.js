@@ -31,7 +31,7 @@ const Login = () => {
     return (
         <div className='flex justify-center items-center my-20'>
             <div>
-                <h1 className="text-4xl font-bold text-center">Login now!</h1>
+                {/* <h1 className="text-4xl font-bold text-center">Login now!</h1> */}
                 <form onSubmit={handleSubmit(handleLogin)}>
                     <div>
                         <label className="label"><span className="label-text">Email</span></label>
@@ -58,9 +58,8 @@ const Login = () => {
                     {loginError && <p className='text-error'>{loginError}</p>}
                     <p>New to mobile garage? <Link to='/signup' className='text-accent font-bold'>Create an account</Link></p>
                 </form>
-                <div className="divider">OR</div>
-                <button className='btn btn-outline w-full max-w-xs'>CONTINUE WITH GOOGLE</button>
             </div>
+
         </div>
     );
 };

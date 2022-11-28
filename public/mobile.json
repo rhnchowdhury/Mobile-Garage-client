@@ -1,6 +1,6 @@
 [
     {
-        "id": "63820be637654c4f83e98143",
+        "category": "1",
         "title": "iPhone 14 Pro Max",
         "image": "https://static.digit.in/default/25fcc9986f48c35d9342614a6056e3377814a48d.jpeg?tr=w-1200",
         "address": "Moghbazar",
@@ -11,7 +11,7 @@
         "selling": 130
     },
     {
-        "id": "63820be6d04cf1bc26c778f1",
+        "category": "1",
         "title": "iPhone 13 Pro Max",
         "image": "https://c8.alamy.com/zooms/9/1f53963cc4e248fb9bca1b81d064b262/2h2j7wg.jpg",
         "address": "Modhubagh",
@@ -22,7 +22,7 @@
         "selling": 110
     },
     {
-        "id": "63820be697054d43a3837663",
+        "category": "1",
         "title": "iPhone 12 Pro Max",
         "image": "https://i.pinimg.com/736x/10/b5/fc/10b5fca9ef6460c9156ffe5a74dc7055.jpg",
         "address": "Dhaka",
@@ -33,7 +33,7 @@
         "selling": 100
     },
     {
-        "id": "63820be60adaf78ed4565997",
+        "category": "1",
         "title": "iPhone 12",
         "image": "https://www.gizbot.com/images/2020-04/apple-iphone-12-concept_158711095630.jpg",
         "address": "Farmgate",
@@ -44,13 +44,145 @@
         "selling": 90
     },
     {
-        "id": "63820be6041106fcb9facba0",
+        "category": "1",
         "title": "iPhone 8 Plus",
         "image": "https://media.istockphoto.com/id/955980644/photo/iphone-8-plus-space-gray-rear-view.jpg?s=170667a&w=0&k=20&c=uDgTtNDnYapu4T7h-GvlMW-FjoKodEgl_2HJE-78GR8=",
         "address": "Dhaka",
         "name": "Arham",
         "years": "1 years",
         "post": "10 Feb, 2022",
+        "price": 100,
+        "selling": 80
+    },
+    {
+        "category": "2",
+        "title": "OnePlus Nord CE 2",
+        "image": "https://static.toiimg.com/photo/msid-89645270/89645270.jpg",
+        "address": "Moghbazar",
+        "name": "Raihan",
+        "years": "1 years",
+        "post": "10 Sep, 2022",
+        "price": 180,
+        "selling": 130
+    },
+    {
+        "category": "2",
+        "title": "OnePlus 9 Pro",
+        "image": "https://minirate.ch/wp-content/uploads/2021/04/oneplus-9-pro-green-1.jpg",
+        "address": "Modhubagh",
+        "name": "Tanjim",
+        "years": "1.5 years",
+        "post": "10 Jul, 2022",
+        "price": 150,
+        "selling": 110
+    },
+    {
+        "category": "2",
+        "title": "OnePlus 10 Pro",
+        "image": "https://alaneesqatar.qa/wp-content/uploads/2022/03/oneplus-10-pro-black-3.png",
+        "address": "Dhaka",
+        "name": "Talha",
+        "years": "1 years",
+        "post": "10 Jun, 2022",
+        "price": 130,
+        "selling": 100
+    },
+    {
+        "category": "2",
+        "title": "OnePlus 9RT",
+        "image": "https://images.firstpost.com/fpimages/1200x800/fixed/jpg/2021/03/OnePlus9-.jpg",
+        "address": "Farmgate",
+        "name": "Tanvir",
+        "years": "2 years",
+        "post": "10 Apr, 2022",
+        "price": 120,
+        "selling": 90
+    },
+    {
+        "category": "2",
+        "title": "OnePlus Nord 2T",
+        "image": "https://m.media-amazon.com/images/I/51YgjWO013L._SL1500_.jpg",
+        "address": "Dhaka",
+        "name": "Arham",
+        "years": "1 years",
+        "post": "10 Feb, 2022",
+        "price": 100,
+        "selling": 80
+    },
+    {
+        "category": "2",
+        "title": "OnePlus 8 Pro",
+        "image": "https://cdn.shopify.com/s/files/1/1706/9177/products/gg2_a683d371-8604-4697-aa6f-7b9179f2f8a4.jpg?v=1613634903",
+        "address": "Dhaka",
+        "name": "Arshan",
+        "years": "1 years",
+        "post": "10 Jan, 2022",
+        "price": 100,
+        "selling": 80
+    },
+    {
+        "category": "3",
+        "title": "Xiaomi 13 Lite",
+        "image": "https://media.suara.com/pictures/653x366/2021/12/29/86522-xiaomi-12.jpg",
+        "address": "Moghbazar",
+        "name": "Raihan",
+        "years": "1 years",
+        "post": "10 Sep, 2022",
+        "price": 180,
+        "selling": 130
+    },
+    {
+        "category": "3",
+        "title": "Xiaomi Note 12",
+        "image": "https://img.unocero.com/2022/04/Redmin-Note-12-1024x674.jpeg",
+        "address": "Modhubagh",
+        "name": "Tanjim",
+        "years": "1.5 years",
+        "post": "10 Jul, 2022",
+        "price": 150,
+        "selling": 110
+    },
+    {
+        "category": "3",
+        "title": "Xiaomi Note 12 Pro",
+        "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/REDMI_NOTE_12_PRO_PLUS_3.JPG",
+        "address": "Dhaka",
+        "name": "Talha",
+        "years": "1 years",
+        "post": "10 Jun, 2022",
+        "price": 130,
+        "selling": 100
+    },
+    {
+        "category": "3",
+        "title": "Xiaomi Note 11 Pro",
+        "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Xiaomi_Redmi_Note_11_Serie_auf_Geekbench46.jpg",
+        "address": "Farmgate",
+        "name": "Tanvir",
+        "years": "2 years",
+        "post": "10 Apr, 2022",
+        "price": 120,
+        "selling": 90
+    },
+    {
+        "category": "3",
+        "title": "Xiaomi Note 10 Pro",
+        "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Redmi_Note_10_Pro3685.jpg",
+        "address": "Dhaka",
+        "name": "Arham",
+        "years": "1 years",
+        "post": "10 Feb, 2022",
+        "price": 100,
+        "selling": 80
+    },
+    {
+        "category": "3",
+        "title": "Xiaomi Note 10 Pro",
+        "image": "https://gngp.sgp1.digitaloceanspaces.com/files/Xiaomi/Redmi%20Note%209%20Pro/Redmi-Note-9-Pro-Interstellar-Grey-des-2.jpg",
+        "address": "Dhaka",
+        "name": "Arshan",
+        "years": "1 years",
+        "post": "10 Jan, 2022",
         "price": 100,
         "selling": 80
     }

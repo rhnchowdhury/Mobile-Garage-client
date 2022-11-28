@@ -4,7 +4,7 @@ import Main from '../../Layouts/Main';
 import Blog from '../../Pages/Blogs/Blog/Blog';
 import Dash from '../../Pages/Dash';
 import Home from '../../Pages/Homes/Home';
-import Login from '../../Pages/Login/Login';
+import LoginProcess from '../../Pages/Login/LoginProcess';
 import SignUp from '../../Pages/Login/SignUp';
 import IphoneAll from '../../Products/iPhones/Alliphones/IphoneAll';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
@@ -24,7 +24,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/login',
-                element: <Login></Login>
+                element: <LoginProcess></LoginProcess>
             },
             {
                 path: '/signup',
