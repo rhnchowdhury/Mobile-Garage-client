@@ -11,6 +11,7 @@ import SignUp from '../../Pages/Login/SignUp';
 import MyOrder from '../../Pages/Orders/MyOrders/MyOrder';
 import Payment from '../../Pages/Orders/Payment/Payment';
 import Phone from '../../Pages/Phones/Phone';
+import NotFound from '../404/NotFound';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 
 export const router = createBrowserRouter([
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
                     return fetch(`http://localhost:5000/phone/${params.id}`)
                 },
                 element: <Phone></Phone>
+            },
+            {
+                path: "/*",
+                element: <NotFound></NotFound>
             }
         ]
     },
