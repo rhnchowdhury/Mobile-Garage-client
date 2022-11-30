@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IphoneShow = ({ iphone }) => {
+const IphoneShow = ({ iphone, setBooked }) => {
     const { title, image } = iphone;
     return (
 
@@ -11,6 +11,11 @@ const IphoneShow = ({ iphone }) => {
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{title}</h2>
             </div>
+            {/* <button className='btn btn-error'>View All</button> */}
+            <label
+                htmlFor="booking-modal" className="btn  btn-error"
+                onClick={() => setBooked(iphone)}
+            >Book Now</label>
         </div>
     );
 };

@@ -1,12 +1,15 @@
 import { useQuery } from '@tanstack/react-query';
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import BookModal from '../../../Pages/Bookings/BookModal';
 import IphoneShow from './IphoneShow';
 
 const Iphone = () => {
+    const [booked, setBooked] = useState(null);
     const { data: iphones = [] } = useQuery({
         queryKey: [],
-        queryFn: () => fetch('http://localhost:5000/phone')
+        // queryFn: () => fetch('http://localhost:5000/phone')
+        queryFn: () => fetch('plus.json')
             .then(res => res.json())
     });
     return (
@@ -14,17 +17,24 @@ const Iphone = () => {
             <h1>iPhone</h1>
             <div className='grid grid-cols-1 lg:grid-cols-2'>
                 {
-                    iphones.map(iphone => <IphoneShow key={iphone._id} iphone={iphone}></IphoneShow>)
+                    iphones.map(iphone => <IphoneShow key={iphone.id} iphone={iphone}
+                        setBooked={setBooked}
+                    ></IphoneShow>)
                     // iphones.slice(0, 1)
                 }
-                <div className='card-actions justify-center ml-44'>
+                {/* <div className='card-actions justify-center ml-44'>
                     <Link to='/iphone'>
                         <button className='btn btn-error'>View All</button>
                     </Link>
-                </div>
-                {/* <button className='btn btn-error'>View All</button> */}
+                </div> */}
 
             </div>
+            {booked &&
+                <BookModal
+                    booked={booked}
+                    setBooked={setBooked}
+                ></BookModal>
+            }
         </section>
     );
 };

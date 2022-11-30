@@ -2,15 +2,22 @@ import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+import useToken from '../../Hooks/useToken';
 
 
 const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const { login } = useContext(AuthContext);
     const [loginError, setLoginError] = useState('');
+    const [loginUserEmail, setLoginUserEmail] = useState((''));
+    const [token] = useToken(loginUserEmail);
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
+
+    if (token) {
+        navigate(from, { replace: true })
+    }
 
     const handleLogin = (data, e) => {
         console.log(data);
@@ -20,7 +27,7 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user)
-                navigate(from, { replace: true })
+                setLoginUserEmail(data.email);
             })
             .catch(err => {
                 console.log(err)
@@ -33,6 +40,15 @@ const Login = () => {
             <div>
                 {/* <h1 className="text-4xl font-bold text-center">Login now!</h1> */}
                 <form onSubmit={handleSubmit(handleLogin)}>
+                    <div>
+                        <label className="label"><span className="label-text">Name</span></label>
+                        <input type='text' {...register("name",
+                            {
+                                required: "Name is required"
+                            })}
+                            className="input input-bordered w-full max-w-xs" />
+                        {errors.name && <p className='text-error'>{errors.name?.message}</p>}
+                    </div>
                     <div>
                         <label className="label"><span className="label-text">Email</span></label>
                         <input type='text' {...register("email",
