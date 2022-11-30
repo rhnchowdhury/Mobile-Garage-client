@@ -1,40 +1,22 @@
 import { useQuery } from '@tanstack/react-query';
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import BookModal from '../../../Pages/Bookings/BookModal';
+import React from 'react';
 import IphoneShow from './IphoneShow';
 
 const Iphone = () => {
-    const [booked, setBooked] = useState(null);
-    const { data: iphones = [] } = useQuery({
+    const { data: products = [] } = useQuery({
         queryKey: [],
-        // queryFn: () => fetch('http://localhost:5000/phone')
-        queryFn: () => fetch('plus.json')
+        queryFn: () => fetch('http://localhost:5000/phone')
             .then(res => res.json())
     });
+
     return (
         <section>
-            <h1>iPhone</h1>
-            <div className='grid grid-cols-1 lg:grid-cols-2'>
+            <h1 className='text-2xl font-bold  text-pink-900 text-center mt-8'>Phone Category</h1>
+            <div className='grid gap-3 grid-cols-1 lg:grid-cols-3 m-12'>
                 {
-                    iphones.map(iphone => <IphoneShow key={iphone.id} iphone={iphone}
-                        setBooked={setBooked}
-                    ></IphoneShow>)
-                    // iphones.slice(0, 1)
+                    products.slice(0, 3).map(product => <IphoneShow key={product._id} product={product}></IphoneShow>)
                 }
-                {/* <div className='card-actions justify-center ml-44'>
-                    <Link to='/iphone'>
-                        <button className='btn btn-error'>View All</button>
-                    </Link>
-                </div> */}
-
             </div>
-            {booked &&
-                <BookModal
-                    booked={booked}
-                    setBooked={setBooked}
-                ></BookModal>
-            }
         </section>
     );
 };

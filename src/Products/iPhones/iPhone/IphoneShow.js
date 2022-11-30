@@ -1,21 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const IphoneShow = ({ iphone, setBooked }) => {
-    const { title, image } = iphone;
+const IphoneShow = ({ product }) => {
+    const { category, title, image } = product;
+
     return (
-
-        <div className="card w-48 bg-base-100 shadow-xl">
+        <div className="card w-80 bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
-                <img src={image} alt="Shoes" className="rounded-xl" />
+                <img src={image} alt="Shoes" className="rounded-xl w-48" />
             </figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{title}</h2>
             </div>
-            {/* <button className='btn btn-error'>View All</button> */}
-            <label
-                htmlFor="booking-modal" className="btn  btn-error"
-                onClick={() => setBooked(iphone)}
-            >Book Now</label>
+            <div className='card-actions justify-center py-3'>
+                <Link to={`/phone/${category}`}><button className='btn btn-error'>View All</button></Link>
+            </div>
         </div>
     );
 };

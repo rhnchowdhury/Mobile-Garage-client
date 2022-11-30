@@ -1,6 +1,7 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import AddProducts from '../../Layouts/DashBoard/AddProducts/AddProducts';
+import MyProduct from '../../Layouts/DashBoard/MyProducts/MyProduct';
 import DashboardLayout from '../../Layouts/DashboardLayout/DashboardLayout';
 import Main from '../../Layouts/Main';
 import Blog from '../../Pages/Blogs/Blog/Blog';
@@ -9,6 +10,7 @@ import LoginProcess from '../../Pages/Login/LoginProcess';
 import SignUp from '../../Pages/Login/SignUp';
 import MyOrder from '../../Pages/Orders/MyOrders/MyOrder';
 import Payment from '../../Pages/Orders/Payment/Payment';
+import Phone from '../../Pages/Phones/Phone';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 
 export const router = createBrowserRouter([
@@ -31,6 +33,13 @@ export const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUp></SignUp>
+            },
+            {
+                path: '/phone/:id',
+                loader: async ({ params }) => {
+                    return fetch(`http://localhost:5000/phone/${params.id}`)
+                },
+                element: <Phone></Phone>
             }
         ]
     },
@@ -50,6 +59,10 @@ export const router = createBrowserRouter([
                 path: '/dashboard/add',
                 element: <AddProducts></AddProducts>
             },
+            {
+                path: '/dashboard/products',
+                element: <MyProduct></MyProduct>
+            }
 
         ]
     }

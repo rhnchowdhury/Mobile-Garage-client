@@ -42,8 +42,6 @@ const BookModal = ({ booked, setBooked }) => {
                     toast.success('Item is booked')
                 }
             })
-
-
     }
 
     return (

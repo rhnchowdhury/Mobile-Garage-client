@@ -4,6 +4,7 @@ import phone2 from '../../../assets/optional/phone2.jpg'
 import phone3 from '../../../assets/optional/phone3.webp'
 
 const Optional = () => {
+
     return (
         <div className='grid gap-4 grid-cols-1 lg:grid-cols-3 mt-12'>
             <div className="hero bg-orange-300 rounded-lg">
