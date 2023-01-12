@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+import useTitle from '../../Hooks/useTitle';
 import useToken from '../../Hooks/useToken';
 
 const SignUp = () => {
@@ -11,6 +12,7 @@ const SignUp = () => {
     const [createdUserEmail, setCreatedUserEmail] = useState('');
     const [token] = useToken(createdUserEmail);
     const navigate = useNavigate();
+    useTitle('Signup');
 
     if (token) {
         navigate('/');

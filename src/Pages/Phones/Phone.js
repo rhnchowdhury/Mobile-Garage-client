@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import useTitle from '../../Hooks/useTitle';
 import BookModal from '../Bookings/BookModal';
 import PhoneShow from './PhoneShow';
 
 const Phone = () => {
     const phones = useLoaderData();
+    useTitle('Phone');
     const [booked, setBooked] = useState(null);
 
     return (

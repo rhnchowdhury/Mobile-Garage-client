@@ -1,9 +1,11 @@
 import React from 'react';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+import useTitle from '../../../Hooks/useTitle';
 
 const AddProducts = () => {
     const navigate = useNavigate();
+    useTitle('AddProducts');
 
     const handleAddProducts = event => {
         event.preventDefault();

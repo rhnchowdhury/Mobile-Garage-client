@@ -2,9 +2,11 @@ import { useQuery } from '@tanstack/react-query';
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
+import useTitle from '../../../Hooks/useTitle';
 
 const MyOrder = () => {
     const { user } = useContext(AuthContext);
+    useTitle('MyOrders');
 
     const url = `https://mobile-garage-server-ten.vercel.app/booking?email=${user?.email}`;
 
@@ -23,7 +25,7 @@ const MyOrder = () => {
 
     return (
         <div>
-            <h1 className='text-2xl font-bold  text-pink-900 text-center my-12'>My Orders</h1>
+            <h1 className='text-2xl font-bold text-orange-600 text-center my-12'>My Orders</h1>
             <div className="overflow-x-auto">
                 <table className="table w-full">
                     <thead>
