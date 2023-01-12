@@ -14,15 +14,15 @@ const NavBar = () => {
 
     const menuItems =
         <React.Fragment>
-            <li><Link to='/' className='text-white text-md font-semibold'>Home</Link></li>
-            <li><Link to='/blog' className='text-white text-md font-semibold'>Blog</Link></li>
+            <li><Link to='/' className='text-white text-md font-semibold bg-orange-600'>Home</Link></li>
+            <li><Link to='/blog' className='text-white text-md font-semibold bg-orange-600'>Blog</Link></li>
             {user?.uid ?
                 <>
-                    <li><Link to='/dashboard' className='text-white text-md font-semibold'>Dashboard</Link></li>
-                    <li><button onClick={handleLogOut} className='text-white text-md font-semibold'>Sign Out</button></li>
+                    <li><Link to='/dashboard' className='text-white text-md font-semibold bg-orange-600'>Dashboard</Link></li>
+                    <li><button onClick={handleLogOut} className='text-white text-md font-semibold bg-orange-600'>Sign Out</button></li>
                 </>
                 :
-                <li><Link to='/login' className='text-white text-md font-semibold'>Log in</Link></li>}
+                <li><Link to='/login' className='text-white text-md font-semibold bg-orange-600'>Log in</Link></li>}
         </React.Fragment>
     return (
         <div className="navbar bg-orange-600">

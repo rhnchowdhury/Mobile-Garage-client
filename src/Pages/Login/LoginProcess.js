@@ -16,7 +16,7 @@ const LoginProcess = () => {
 
     return (
         <div >
-            <h1 className="text-4xl font-bold text-pink-900 text-center my-12">Login Process</h1>
+            <h1 className="text-4xl font-bold text-orange-600 text-center my-12">Login Process</h1>
             <div className='card-actions justify-center'>
                 <label htmlFor="my-modal-3" className="btn btn-error text-white">Seller Login</label>
                 <input type="checkbox" id="my-modal-3" className="modal-toggle" />

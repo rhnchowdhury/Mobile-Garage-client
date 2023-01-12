@@ -4,7 +4,7 @@ const PhoneShow = ({ phone, setBooked }) => {
     const { title, image, name, post, price, selling, address, years } = phone;
 
     return (
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card lg:w-96 bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
                 <img src={image} alt="Shoes" className="rounded-xl" />
             </figure>
@@ -18,7 +18,7 @@ const PhoneShow = ({ phone, setBooked }) => {
                 <p><strong>Posted Date: </strong>{post}</p>
                 <div className="card-actions">
                     <label
-                        htmlFor="booking-modal" className="btn  btn-error"
+                        htmlFor="booking-modal" className="btn  btn-error bg-orange-600"
                         onClick={() => setBooked(phone)}
                     >Book Now</label>
                 </div>

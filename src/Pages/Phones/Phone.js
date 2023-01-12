@@ -8,7 +8,7 @@ const Phone = () => {
     const [booked, setBooked] = useState(null);
 
     return (
-        <section className='m-12'>
+        <section className='lg:m-12'>
             <div className='grid gap-4 grid-cols-1 lg:grid-cols-3'>
                 {
                     phones.map(phone => <PhoneShow key={phone._id} phone={phone} setBooked={setBooked}></PhoneShow>)
