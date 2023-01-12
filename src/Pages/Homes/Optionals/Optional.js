@@ -6,7 +6,7 @@ import phone3 from '../../../assets/optional/phone3.webp'
 const Optional = () => {
 
     return (
-        <div className='grid gap-4 grid-cols-1 lg:grid-cols-3 mt-12'>
+        <div className='grid gap-4 grid-cols-1 lg:grid-cols-3 mt-12 mb-5'>
             <div className="hero bg-orange-300 rounded-lg">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img src={phone1} alt='' className="w-16 rounded-lg shadow-2xl" />

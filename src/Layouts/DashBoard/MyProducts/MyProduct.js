@@ -5,7 +5,7 @@ const MyProduct = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/phone')
+        fetch('https://mobile-garage-server-ten.vercel.app/phone')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])

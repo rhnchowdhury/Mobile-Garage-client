@@ -40,7 +40,7 @@ export const router = createBrowserRouter([
             {
                 path: '/phone/:id',
                 loader: async ({ params }) => {
-                    return fetch(`http://localhost:5000/phone/${params.id}`)
+                    return fetch(`https://mobile-garage-server-ten.vercel.app/phone/${params.id}`)
                 },
                 element: <Phone></Phone>
             },
